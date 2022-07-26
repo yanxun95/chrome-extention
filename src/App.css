@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
+  background-color: green;
   display: flex;
-  flex-direction: column;
+  width: 250px;
+  height: 175px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.form-group-container{
+  margin-bottom: 0.25rem;
+}
+
+.form-label-customize{
+  margin-bottom: 0.2rem !important;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form{
+  justify-content: flex-start !important;
+}
+
+.btn-container{
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-yes, .btn-no{
+  width: 4rem;
+  color: black !important;
+  border-radius: 0.25rem;
+  border: 1px solid black !important;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0.25rem 0rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-yes:hover, .btn-no:hover{
+  transform: scale(1.05);
+}
+.btn-yes:active, .btn-no:active{
+  transform: scale(1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-yes{
+  background-color: lightcoral;
+}
+
+.btn-no{
+  background-color: saddlebrown;
+}
+
+.login-container{
+  min-width: 175px;
+}
+
+.btn-logout-container{
+  display: flex;
+  justify-content: center;
 }
